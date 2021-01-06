@@ -41,6 +41,12 @@
                     <label for="inputPassword4" class="form-label">Apellido</label>
                     <input type="text" class="form-control" name="Apellido">
                 </div>
+                <div class="col-md-12">
+                    <label class="col-5 col-form-label">Fecha de nacimiento</label>
+                    <div class="col-10">
+                        <input class="form-control" type="date" name="FechaNacimiento">
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
                     <input type="email" class="form-control" id="inputEmail4" name="Email">
