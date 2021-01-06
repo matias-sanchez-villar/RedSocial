@@ -16,10 +16,10 @@
 
         <div class="col-12 row m-5 d-flex justify-content-center">
             <div class="col-2">
-                <img src="..." class="img-thumbnail" alt="...">
+                <img src="Programador.jpg" class="img-thumbnail" alt="Foto de perfil">
             </div>
             <div class="col-10 row">
-                <div class="col-6">
+                <div class="col-4">
                     <p>Nombre y apellido</p>
                     <p>Fecha Nacimient</p>
                     <p>Edad</p>
@@ -27,10 +27,10 @@
                 <div class="col-6">
                     <h1 class="display-6 text-center">Buscar usuarios</h1>
                     <form class="row p-3" name="Cargar" action="Cargar.php" method="post">
-                        <div class="col-8 d-flex justify-content-center">
+                        <div class="col-9">
                             <input type="text" placeholder="Nombre del usuario" class="form-control" name="Nombre">
                         </div>
-                        <div class="col-4 d-flex justify-content-center">
+                        <div class="col-3">
                             <button type="submit" name="Enviar" value="Enviar" class="btn btn-primary">Enviar</button>
                         </div>
                     </form>
