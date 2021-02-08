@@ -9,10 +9,33 @@
 </head>
 <body class="btn-primary">
     <h1 class="text-center p-3 Fabook"><strong>FabooK</strong></h1>
-    <div class="bg-light text-dark row rounded margen border border-dark">
-        <div class="col">
-            <h2 class="text-center p-2 inciption">Inscripción</h2>
-        </div>
+    <div class="bg-light text-dark row rounded border border-dark mx-5 mb-5 px-3 pb-3">
+        <form class="row g-3">
+            <legend class="text-center">Inscripción</legend>
+            <div class="col-md-6">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Apellido</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                <label class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control">
+              </div>
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Contraseña</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="d-grid gap-2 col-2 mx-auto">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
     </div>
 </body>
 </html>
