@@ -11,14 +11,14 @@
     <h1 class="text-center p-3 Fabook"><strong>FabooK</strong></h1>
     <div class="bg-light text-dark row rounded border border-dark mx-5 mb-5 px-3 pb-3">
         <form class="row g-3">
-            <legend class="text-center">Inscripción</legend>
+            <legend class="text-center mt-1">Inscripción</legend>
             <div class="col-md-6">
                 <label class="form-label">Nombre</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" placeholder="Nombre">
             </div>
             <div class="col-md-6">
                 <label class="form-label">Apellido</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" placeholder="Apellido">
             </div>
             <div class="col-12">
                 <label class="form-label">Fecha de nacimiento</label>
@@ -26,16 +26,24 @@
               </div>
             <div class="col-md-6">
                 <label class="form-label">Email</label>
-                <input type="email" class="form-control">
+                <input type="email" class="form-control" placeholder="Email@email.com">
             </div>
             <div class="col-md-6">
                 <label class="form-label">Contraseña</label>
-                <input type="password" class="form-control">
+                <input type="password" class="form-control" placeholder="*******">
             </div>
-            <div class="d-grid gap-2 col-2 mx-auto">
+            <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label" for="gridCheck">
+                    Acepto los terminos y condiciones
+                  </label>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-2 mx-auto mt-4">
               <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
-          </form>
+        </form>
     </div>
 </body>
 </html>
