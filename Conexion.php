@@ -1,0 +1,18 @@
+<?php
+
+class Conexion{
+    
+    private $User = "root";
+    private $Pass = "";
+    protected $Conexion;
+    
+    protected function __construct(){
+        try{
+            
+            $this->Conexion = new PDO ('mysql:host=localhost;dbname=prueba', $this->User, $this->Pass);
+            
+        }catch(PDOException $e){
+            die("Error: " . $e->getMessage());
+        }
+    }
+}
