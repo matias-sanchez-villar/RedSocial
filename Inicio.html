@@ -10,13 +10,13 @@
 <body class="btn-primary">
     <h1 class="text-center p-3 Fabook"><strong>FabooK</strong></h1>  
     <div class="bg-light text-dark row rounded border border-dark mx-5 mb-5 px-3 pb-4">
-        <form class="row g-3">
+        <form class="row g-3" method="POST" name="Inicio" action="funciones.php">
             <legend class="text-center mt-1">Iniciar sesion</legend>
             <div class="col-md-4">
-                <input type="email" class="form-control" placeholder="Email@fabook.com">
+                <input type="email" class="form-control" placeholder="Email@fabook.com" name="Email">
             </div>
             <div class="col-md-4">
-                <input type="password" class="form-control" placeholder="*******">
+                <input type="password" class="form-control" placeholder="*******" name="Contasena">
             </div>
             <div class="col-md-3">
               <button type="submit" class="btn btn-primary">Enviar</button>

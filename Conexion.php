@@ -6,10 +6,10 @@ class Conexion{
     private $Pass = "";
     protected $Conexion;
     
-    protected function __construct(){
+    public function __construct(){
         try{
             
-            $this->Conexion = new PDO ('mysql:host=localhost;dbname=prueba', $this->User, $this->Pass);
+            $this->Conexion = new PDO ('mysql:host=localhost;dbname=redsocial', $this->User, $this->Pass);
             
         }catch(PDOException $e){
             die("Error: " . $e->getMessage());
