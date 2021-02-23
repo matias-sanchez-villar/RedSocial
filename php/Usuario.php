@@ -1,6 +1,6 @@
 <?php
 
-require("Conexion.php");
+require_once ("Conexion.php");
 
 class Usuario extends Conexion{
     
@@ -15,7 +15,16 @@ class Usuario extends Conexion{
     public function __construct(){
         parent::__construct();
     }
-    public function Registrar($valores){
-        var_dump($valores);///ver como pasar el array _post entero
+    
+    public function Registrar($Array){
+        
+    }
+
+    public function Login($Array){
+        
+    }
+
+    public function Obtener($Nombre){
+        
     }
 }
