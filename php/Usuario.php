@@ -26,8 +26,8 @@ class Usuario extends Conexion{
         if(isset($Array['Fecha'])){
             $this->FechaNacimiento= $Array['Fecha'];
         }
-        if(isset($Array['email'])){
-            $this->email= $Array['email'];
+        if(isset($Array['Email'])){
+            $this->email= $Array['Email'];
         }
         if(isset($Array['contrasena'])){
             $this->Contrasena= $Array['contrasena'];
@@ -46,6 +46,10 @@ class Usuario extends Conexion{
     }
 
     public function Obtener(){
-        
+        /*
+        *
+        *       (SELECT * FROM usuarios WHERE Nombre=$this->Array['Nombre']) /// QUE NO SE REPITA EMAIL 
+        *       return array
+        */
     }
 }
