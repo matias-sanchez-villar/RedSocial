@@ -35,7 +35,7 @@ CREATE TABLE `usuarios` (
   `Sexo` varchar(12) NOT NULL,
   `FechaNacimiento` date NOT NULL,
   `Email` varchar(70) NOT NULL,
-  `Contraseña` varchar(20) NOT NULL
+  `Contrasena` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --

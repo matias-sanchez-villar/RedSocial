@@ -16,15 +16,36 @@ class Usuario extends Conexion{
         parent::__construct();
     }
     
-    public function Registrar($Array){
-        $sql = 
+    public function Cargar($Array){
+        if(isset($Array['Nombre'])){
+            $this->Nombre= $Array['Nombre'];
+        }
+        if(isset($Array['Apellido'])){
+            $this->Apellido= $Array['Apellido'];
+        }
+        if(isset($Array['Fecha'])){
+            $this->FechaNacimiento= $Array['Fecha'];
+        }
+        if(isset($Array['email'])){
+            $this->email= $Array['email'];
+        }
+        if(isset($Array['contrasena'])){
+            $this->Contrasena= $Array['contrasena'];
+        }
+    }
+    
+    public function Registrar(){
+        /*
+        *
+        *       (SELECT * FROM usuarios WHERE Email=$this->Array['email']) /// QUE NO SE REPITA EMAIL 
+        *       (INSERT INTO usuarios(Nombre, Apellido, Sexo, FechaNacimiento, Email, Contrasena) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8]))
+        */
     }
 
-    public function Login($Array){
-        
+    public function Login(){
     }
 
-    public function Obtener($Nombre){
+    public function Obtener(){
         
     }
 }
