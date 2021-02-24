@@ -17,7 +17,7 @@ class Usuario extends Conexion{
     }
     
     public function Registrar($Array){
-        
+        $sql = 
     }
 
     public function Login($Array){
