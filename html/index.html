@@ -10,7 +10,7 @@
 <body class="btn-primary">
     <h1 class="text-center p-3 Fabook"><strong>FabooK</strong></h1>
     <div class="bg-light text-dark row rounded border border-dark mx-5 mb-5 px-3 pb-3">
-        <form class="row g-3" method="POST" name="Inscripción">
+        <form class="row g-3" method="POST" name="Inscripción" action="prueba.php">
             <legend class="text-center mt-1">Inscripción</legend>
             <div class="col-md-6">
                 <label class="form-label">Nombre</label>
@@ -26,9 +26,9 @@
             </div>
             <div class="col-6">
                 <label class="form-label">Sexo</label>
-                <select class="form-select">
-                    <option value="1">Hombre</option>
-                    <option value="2">Mujer</option>
+                <select class="form-select" name="Sexo[]">
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
                 </select>
             </div>
             <div class="col-md-6">
