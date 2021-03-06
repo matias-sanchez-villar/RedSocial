@@ -39,15 +39,10 @@ class Usuario extends Conexion{
     }
     
     public function Registrar(){
-        /*
-        *
-        *       (SELECT * FROM usuarios WHERE Email=$this->Array['email']) /// QUE NO SE REPITA EMAIL 
-        *       (INSERT INTO usuarios(Nombre, Apellido, Sexo, FechaNacimiento, Email, Contrasena) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8]))
-        */
 
-        $this->Statement = $this->Conexion = prepare("INSERT INTO usuarios(Nombre, Apellido, Sexo, FechaNacimiento, Email, Contrasena) VALUES (?,?,?,?,?,?)");
+        $this->Statement = $this->Conexion -> prepare("INSERT INTO usuarios(Nombre, Apellido, Sexo, FechaNacimiento, Email, Contrasena) VALUES (?,?,?,?,?,?)");
     
-        $this->Statement = execute(array($this->Nombre,$this->Apellido,$this->Sexo,$this->FechaNacimiento,$this->Email,$this->Contrasena));    
+        $retorno =$this->Statement -> execute(array($this->Nombre,$this->Apellido,$this->Sexo,$this->FechaNacimiento,$this->Email,$this->Contrasena));
     
     }
 

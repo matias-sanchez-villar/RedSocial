@@ -10,7 +10,7 @@
 <body class="btn-primary">
     <h1 class="text-center p-3 Fabook"><strong>FabooK</strong></h1>
     <div class="bg-light text-dark row rounded border border-dark mx-5 mb-5 px-3 pb-3">
-        <form class="row g-3" method="POST" name="Inscripción" action="prueba.php">
+        <form class="row g-3" method="POST" action="../php/prueba.php">
             <legend class="text-center mt-1">Inscripción</legend>
             <div class="col-md-6">
                 <label class="form-label">Nombre</label>
@@ -41,14 +41,14 @@
             </div>
             <div class="col-12">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox">
+                  <input class="form-check-input" type="checkbox" name="Contrato">
                   <label class="form-check-label" for="gridCheck">
                     Acepto los terminos y condiciones
                   </label>
                 </div>
             </div>
             <div class="d-grid gap-2 col-2 mx-auto mt-4">
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="submit" class="btn btn-primary" name="Inscripcion">Enviar</button>
             </div>
         </form>
     </div>

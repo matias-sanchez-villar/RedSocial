@@ -2,6 +2,8 @@
 
 require_once ("Usuario.php");
 
-uno = new Usuario();
+$uno = new Usuario();
 
-uno->cargar($_POST["Inscripción"]);
+$uno->Cargar($_POST['Inscripcion']);
+
+$uno->Registrar();
